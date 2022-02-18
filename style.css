@@ -1,0 +1,179 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    width: 600px;
+    margin: 50px auto 25px;
+}
+
+.title {
+    font-size: 45px;
+    word-spacing: 5px;
+    font-weight: 700;
+    width: 600px;
+    margin: auto;
+    animation: normal mover-titulo 4s ease;
+}
+
+.title span {
+    color: hsl(0, 0%, 59%);
+}
+
+.subscribe {
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+}
+
+#email {
+    border-radius: 25px;
+    width: 350px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.success {
+    border: 1px solid hsl(0, 0%, 59%);
+}
+
+#email::placeholder {
+    padding-left: 10px;
+}
+
+.text-error-placeholder::placeholder {
+    color: hsl(209, 33%, 12%);
+}
+
+.boton-submit {
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 150px;
+    border-radius: 25px;
+    height: 45px;
+}
+
+.dashboard {
+    width: 600px;
+    margin-top: 75px;
+
+}
+
+.icons {
+    margin-top: 100px;
+    color: hsl(223, 87%, 63%);
+}
+
+.icon-facebook:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.icon-twitter:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.icon-instagram:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.icon-facebook, .icon-twitter {
+    margin-right: 25px;
+}
+
+.text-footer {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.hover-error {
+    border: 2px solid hsl(354, 100%, 66%);
+}
+
+.text-error {
+    color: hsl(354, 100%, 66%);
+    font-size: 15px;
+    font-weight: 300;
+    width: 600px;
+    margin: 10px auto 0 490px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@keyframes mover-titulo {
+    0% {
+        transform: scale(0)
+    }
+
+    25% {
+        transform: scale(0.25)
+    }
+
+    50% {
+        transform: scale(0.50)
+    }
+
+    75% {
+        transform: scale(0.75)
+    }
+}
+
+@media(max-width:375px) {
+    header {
+        width: 300px;
+    }
+
+    .title {
+        width: 300px;
+        font-size: 25px;
+        margin-left: 40px;
+    }
+
+    .subscribe {
+        margin-top: 30px;
+        margin-left: 40px;
+        width: 300px;
+    }
+
+    form {
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    #email {
+        width: 300px;
+        height: 59px;
+        margin-bottom: 30px;
+    }
+
+    .boton-submit {
+        width: 300px;
+        height: 59px;
+    }
+
+    footer {
+        margin-left: 40px;
+        width: 300px;
+    }
+
+    .dashboard {
+        width: 300px;
+        margin-left: 40px
+    }
+
+    .text-error {
+        width: 250px;
+        margin-left: 40px;
+        position: absolute;
+        top: 280px;
+    }
+
+}
